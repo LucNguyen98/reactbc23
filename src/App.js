@@ -29,6 +29,10 @@ import Detail from "./pages/Detail/Detail";
 import Search from "./pages/Search/Search";
 import BaiTapQuanLyNguoiDung from "./pages/BaiTapQuanLyNguoiDung/BaiTapQuanLyNguoiDung";
 import LifeCycle from "./pages/LifeCycle/LifeCycle";
+import DemoUseSate from "./hooks/DemoUseSate/DemoUseSate";
+import DemoUseEffect from "./hooks/DemoUseEffect/DemoUseEffect";
+import ApiRfc from "./pages/Api/DemoApi/ApiRfc";
+import ApiRcc from "./pages/Api/DemoApi/ApiRcc";
 
 function App() {
   return (
@@ -38,7 +42,7 @@ function App() {
         <Route
           exact
           path={"/home"}
-           component={Home}
+          component={Home}
           // render={(propsRoute) => {
           //   // propsRoute : this.props.history | location | match
           //   return (
@@ -57,7 +61,11 @@ function App() {
         <Route exact path={"/search"} component={Search} />
         <Route exact path={"/detail/:postid"} component={Detail} />
         <Route exact path={"/btqlnd"} component={BaiTapQuanLyNguoiDung} />
-        <Route exact path={"/"} component={LifeCycle} />
+        <Route exact path={"/lifecycle"} component={LifeCycle} />
+        <Route exact path={"/usestate"} component={DemoUseSate} />
+        <Route exact path={"/useeffect"} component={DemoUseEffect} />
+        <Route exact path={"/apircc"} component={ApiRcc} />
+        <Route exact path={"/apirfc"} component={ApiRfc} />
         <Route exact path={"/"} component={Home} />
       </Switch>
     </BrowserRouter>
