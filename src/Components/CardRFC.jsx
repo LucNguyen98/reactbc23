@@ -1,10 +1,14 @@
+//rfc: react function component
 import React from 'react'
 
 export default function CardRFC() {
+
+
+    //Nội dung component tạo ra phải được bao phủ bởi 1 thẻ
     return (
-        <section className="nav-bar">
+        <section classname="nav-bar">
             <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
-                <a className="navbar-brand" href="#">Navbar</a>
+                <a className="navbar-brand" href="#">Cybersoft</a>
                 <button className="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation" />
                 <div className="collapse navbar-collapse" id="collapsibleNavId">
                     <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
