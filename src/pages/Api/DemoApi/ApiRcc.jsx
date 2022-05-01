@@ -27,7 +27,7 @@ export default class ApiRcc extends Component {
         // })
 
         try {
-            let result = await axiosIntance.get('ToDoList/GetAllTask');
+            let result = await axiosIntance.get('api/ToDoList/GetAllTask');
             if (result.status === 200) {
                 this.setState({
                     arrTask: result.data

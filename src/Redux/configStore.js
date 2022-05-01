@@ -4,12 +4,14 @@ import { stateImgCar } from "./reducer/imgCarReducer";
 import { gioHangReducer } from "./reducer/gioHangReducer";
 import { gameXucXacReducer } from "./reducer/gameXucXacReducer";
 import { quanLyNguoiDungReducer } from "./reducer/quanLyNguoiDungReducer";
+import { taskReducer } from "./reducer/taskReducer";
 const rootReducer = combineReducers({
   stateNumber,
   stateImgCar,
   stateGioHang: gioHangReducer,
   gameXucXacReducer,
-  quanLyNguoiDungReducer
+  quanLyNguoiDungReducer,
+  taskReducer,
 });
 
 export const store = createStore(

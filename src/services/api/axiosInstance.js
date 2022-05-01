@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosIntance = axios.create({
-  baseURL: "http://svcy.myclass.vn/api/",
+  baseURL: "http://svcy.myclass.vn/",
   timeout: 15000,
 });
 
