@@ -45,10 +45,18 @@ export default class HeaderHome extends Component {
                             <NavLink activeStyle={{ borderRadius: '10px' }} className="nav-link" activeClassName='bg-white text-dark' to="customhooks">CustomHooks</NavLink>
                         </li>
                         <li className="nav-item dropdown">
-                            <NavLink className="nav-link dropdown-toggle" to="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</NavLink>
+                            <NavLink className="nav-link dropdown-toggle" to="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">LifeCycle Hooks</NavLink>
                             <div className="dropdown-menu" aria-labelledby="dropdownId">
-                                <NavLink className="dropdown-item" to="#">Action 1</NavLink>
-                                <NavLink className="dropdown-item" to="#">Action 2</NavLink>
+                                <NavLink className="dropdown-item" to="usecallback">UseCallback</NavLink>
+                                <NavLink className="dropdown-item" to="usememo">UseMemo</NavLink>
+                                <NavLink className="dropdown-item" to="useRef">UseRef</NavLink>
+                            </div>
+                        </li>
+
+                        <li className="nav-item dropdown">
+                            <NavLink className="nav-link dropdown-toggle" to="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Redux thunk middleware</NavLink>
+                            <div className="dropdown-menu" aria-labelledby="dropdownId">
+                                <NavLink className="dropdown-item" to="todolistapp">To do list app</NavLink>
                             </div>
                         </li>
                     </ul>
