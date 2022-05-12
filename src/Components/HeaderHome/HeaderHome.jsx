@@ -35,18 +35,13 @@ export default class HeaderHome extends Component {
                         <li className="nav-item">
                             <NavLink activeStyle={{ borderRadius: '10px' }} className="nav-link" activeClassName='bg-white text-dark' to="btqlnd">ReactForm</NavLink>
                         </li>
-                        <li className="nav-item">
-                            <NavLink activeStyle={{ borderRadius: '10px' }} className="nav-link" activeClassName='bg-white text-dark' to="apircc">To do app RCC</NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink activeStyle={{ borderRadius: '10px' }} className="nav-link" activeClassName='bg-white text-dark' to="apirfc">To do app Rfc</NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink activeStyle={{ borderRadius: '10px' }} className="nav-link" activeClassName='bg-white text-dark' to="customhooks">CustomHooks</NavLink>
-                        </li>
+
                         <li className="nav-item dropdown">
                             <NavLink className="nav-link dropdown-toggle" to="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">LifeCycle Hooks</NavLink>
                             <div className="dropdown-menu" aria-labelledby="dropdownId">
+                                <NavLink className="dropdown-item" to="apircc">To do app RCC</NavLink>
+                                <NavLink className="dropdown-item" to="apirfc">To do app Rfc</NavLink>
+                                <NavLink className="dropdown-item" to="customhooks">CustomHooks</NavLink>
                                 <NavLink className="dropdown-item" to="usecallback">UseCallback</NavLink>
                                 <NavLink className="dropdown-item" to="usememo">UseMemo</NavLink>
                                 <NavLink className="dropdown-item" to="useRef">UseRef</NavLink>
